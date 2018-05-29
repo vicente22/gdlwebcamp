@@ -65,426 +65,527 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html {
-  box-sizing: border-box;
-}
-
-*,*:before,*:after {
-  box-sizing: inherit;
-}
-
-body {
-  background-color: #f2f2f2;
-  font-family: 'Patua One', cursive;
-}
-
-/*GLOBALES*/
-
-.contenedor {
-  width: 95%;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width:480px) {
-  .contenedor {
-    width: 95%;
+   html {
+    box-sizing: border-box;
   }
-}
-
-@media only screen and (min-width:768px) {
-  .contenedor {
-    width: 95%;
+  
+  *,*:before,*:after {
+    box-sizing: inherit;
   }
-}
-
-@media only screen and (min-width:992px) {
-  .contenedor {
-    width: 90%;
-    max-width: 1100px;
-  }
-}
-.seccion{
-    padding: 30px 0;
-}
-.seccion p{
-    font-size: 1.2em;
-    text-align: center;
-}
-h2 {
-  font-family: 'Bungee Inline', cursive;
-  font-size: 2.4em;
-  text-transform: uppercase;
-  text-align: center;
-}
-h2:after{
-    content: '';
-    margin: 0 auto;
-    background-image: url('../img/separador.png');
-    height: 30px;
-    width: 100px;
-    display: block;
-}
-h3{
-  font-size: 1.8em;
-  color: #DE2E19;
-  font-weight: normal;
-  font-family: 'Bungee Inline', cursive;
-  margin: 0;
-}
-.button{
-  border-radius: 3px;
-  transition: all 0.3s ease;
-  background-color: #DE2E19;
-  padding: 10px 40px;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1em;
-  margin-top: 20px;
-  display: inline-block;
-  -webkit-box-shadow: 10px 10px 13px -8px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 13px -8px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 13px -8px rgba(0,0,0,0.75);
-}
-ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.button:hover{
-  transition: all 0.3s ease;
-  color: #fff;
-  background-color: #B32918;
-}
-.float-right{
-  float: right;
-}
-
-/*HEADER*/
-
-div.hero {
-  background-image: url('../img/encabezado.jpg');
-  width: 100%;
-  height: 90vh;
-  background-position: top center;
-  background-size: cover;
-}
-@media only screen and (min-width: 768px) {
-  div.contenido header {
-    padding-top: 10px;
-  }
-}
-
-div.contenido-header {
-  padding-top: 40px;
-}
-
-nav.redes-sociales {
-  text-align: center;
-}
-
-nav.redes-sociales a {
-  color: #fff;
-  font-size: 2em;
-  margin-right: 20px;
-}
-
-nav.redes-sociales a:last-child {
-  margin-right: 0;
-}
-
-div.informacion-evento {
-  text-align: center;
-  color: #fff;
-}
-
-@media only screen and (min-width: 768px) {
-  div.informacion-evento {
-    width: 76%;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-}
-
-div.informacion-evento p {
-  margin: 0;
-  display: inline;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-div.informacion-evento p i {
-  color: #DE2E19;
-  font-size: 2rem;
-  margin-right: 5px;
-}
-
-p.fecha {
-  float: left;
-}
-
-p.ciudad {
-  float: right;
-  text-align: right;
-}
-
-p.slogan {
-  text-transform: none !important;
-}
-
-p.slogan span {
-  font-weight: bold;
-}
-
-h1.nombre-sitio {
-  font-size: 5.9vw;
-  text-transform: uppercase;
-  font-family: 'Bungee Inline', cursive;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  h1.nombre-sitio {
-    font-size: 9.5vw;
-  }
-}
-/*BARRA*/
-div.barra{
-    background-color: #0A3464;
-}
-div.logo{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    width: 80%;
-    float: left;
-}
-div.logo img{
-    width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-    div.logo {
-        width: 33%;
-    }
-}
-
-/*NAVEGACION PRINCIPAL*/
-nav.navegacion-principal{
-    display: none;
-}
-nav.navegacion-principal a{
-    margin-top: 5px;
+  
+  body {
+    background-color: #f2f2f2;
     font-family: 'Patua One', cursive;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
+  }
+  
+  /*GLOBALES*/
+  
+  .contenedor {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (min-width:480px) {
+    .contenedor {
+      width: 95%;
+    }
+  }
+  
+  @media only screen and (min-width:768px) {
+    .contenedor {
+      width: 95%;
+    }
+  }
+  
+  @media only screen and (min-width:992px) {
+    .contenedor {
+      width: 90%;
+      max-width: 1100px;
+    }
+  }
+  .seccion{
+      padding: 30px 0;
+  }
+  .seccion p{
+      font-size: 1.2em;
+      text-align: center;
+  }
+  h2 {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 2.4em;
     text-transform: uppercase;
-    transition: all .6s ease;
-    width: 100%;
-    display: block;
     text-align: center;
-    margin-bottom: 20px;
-}
-nav.navegacion-principal a:hover{
-    background-color: #2390B9;
-}
-nav.navegacion-principal a:last-child{
-    border: 2px solid #DE2E19;
+  }
+  h2:after{
+      content: '';
+      margin: 0 auto;
+      background-image: url('../img/separador.png');
+      height: 30px;
+      width: 100px;
+      display: block;
+  }
+  h3{
+    font-size: 1.8em;
     color: #DE2E19;
-}
-nav.navegacion-principal a:last-child:hover{
-    border: 2px solid #fff;
+    font-weight: normal;
+    font-family: 'Bungee Inline', cursive;
+    margin: 0;
+  }
+  .button{
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    background-color: #DE2E19;
+    padding: 10px 40px;
     color: #fff;
-}
-@media only screen and (min-width:768px){
-    nav.navegacion-principal{
-        margin-top: 15px;
-        width: 67%;
-        float: right;
-        text-align: right;
-        display:block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 20px;
+    display: inline-block;
+    -webkit-box-shadow: 10px 10px 13px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 13px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 13px -8px rgba(0,0,0,0.75);
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .button:hover{
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #B32918;
+  }
+  .float-right{
+    float: right;
+  }
+  
+  /*HEADER*/
+  
+  div.hero {
+    background-image: url('../img/encabezado.jpg');
+    width: 100%;
+    height: 90vh;
+    background-position: top center;
+    background-size: cover;
+  }
+  @media only screen and (min-width: 768px) {
+    div.contenido header {
+      padding-top: 10px;
     }
-    nav.navegacion-principal a{
-        text-align: center;
-        margin-right: 10px;
-        padding: 10px 10px;
-        display: inline-block;
-        width: auto;
-        display: inlines;
-        text-align: center;
-        margin: 0 10px 0 0;
+  }
+  
+  div.contenido-header {
+    padding-top: 40px;
+  }
+  
+  nav.redes-sociales {
+    text-align: center;
+  }
+  
+  nav.redes-sociales a {
+    color: #fff;
+    font-size: 2em;
+    margin-right: 20px;
+  }
+  
+  nav.redes-sociales a:last-child {
+    margin-right: 0;
+  }
+  
+  div.informacion-evento {
+    text-align: center;
+    color: #fff;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    div.informacion-evento {
+      width: 76%;
+      margin: 0 auto;
+      margin-top: 50px;
     }
-}
-/*MENU MOVIL*/
-
-div.menu-movil{
-    width: 60px;
-    display: block;
+  }
+  
+  div.informacion-evento p {
+    margin: 0;
+    display: inline;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  div.informacion-evento p i {
+    color: #DE2E19;
+    font-size: 2rem;
+    margin-right: 5px;
+  }
+  
+  p.fecha {
+    float: left;
+  }
+  
+  p.ciudad {
     float: right;
     text-align: right;
-}
-div.menu-movil:hover{
-    cursor: pointer;
-}
-@media only screen and (min-width: 768px){
-    div.menu-movil{
+  }
+  
+  p.slogan {
+    text-transform: none !important;
+  }
+  
+  p.slogan span {
+    font-weight: bold;
+  }
+  
+  h1.nombre-sitio {
+    font-size: 5.9vw;
+    text-transform: uppercase;
+    font-family: 'Bungee Inline', cursive;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    h1.nombre-sitio {
+      font-size: 9.5vw;
+    }
+  }
+  /*BARRA*/
+  div.barra{
+      background-color: #0A3464;
+  }
+  div.logo{
+      margin-bottom: 10px;
+      margin-top: 10px;
+      width: 80%;
+      float: left;
+  }
+  div.logo img{
+      width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+      div.logo {
+          width: 33%;
+      }
+  }
+  
+  /*NAVEGACION PRINCIPAL*/
+  nav.navegacion-principal{
+      display: none;
+  }
+  nav.navegacion-principal a{
+      margin-top: 5px;
+      font-family: 'Patua One', cursive;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      transition: all .6s ease;
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  nav.navegacion-principal a:hover{
+      background-color: #2390B9;
+  }
+  nav.navegacion-principal a:last-child{
+      border: 2px solid #DE2E19;
+      color: #DE2E19;
+  }
+  nav.navegacion-principal a:last-child:hover{
+      border: 2px solid #fff;
+      color: #fff;
+  }
+  @media only screen and (min-width:768px){
+      nav.navegacion-principal{
+          margin-top: 15px;
+          width: 67%;
+          float: right;
+          text-align: right;
+          display:block;
+      }
+      nav.navegacion-principal a{
+          text-align: center;
+          margin-right: 10px;
+          padding: 10px 10px;
+          display: inline-block;
+          width: auto;
+          display: inlines;
+          text-align: center;
+          margin: 0 10px 0 0;
+      }
+  }
+  /*MENU MOVIL*/
+  
+  div.menu-movil{
+      width: 60px;
+      display: block;
+      float: right;
+      text-align: right;
+  }
+  div.menu-movil:hover{
+      cursor: pointer;
+  }
+  @media only screen and (min-width: 768px){
+      div.menu-movil{
+          display: none;
+      }
+  }
+  div.menu-movil span{
+      margin-top: 4px;
+      text-align: center;
+      border-radius: 3px;
+      height: 8px;
+      margin-bottom: 6px;
+      background-color: #fff;
+      display: block;
+      -webkit-box-shadow: 3px 3px 3px 0px rgba(7,37,71,1);
+      -moz-box-shadow: 3px 3px 3px 0px rgba(7,37,71,1);
+      box-shadow: 3px 3px 3px 0px rgba(7,37,71,1);
+  }
+  div.menu-movil:hover span{
+      transition: all .3s ease;
+      background-color: #DE2E19;
+  }
+  
+  /*Talleres*/
+  section.programa{
+      position: relative;
+  }
+  div.contenedor-video{
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+  div.contenedor-video video{
+      width: 100%;
+  }
+  div.contenido-programa{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+  }
+  div.programa-evento{
+      transition: all .6s ease;
+      background-color: rgba(255,255,255, .5);
+      padding: 15px;
+      margin-top: 80px;
+  }
+  div.programa-evento:hover{
+      transition: all .6s ease;
+      background-color: rgba(255,255,255, .8);
+      padding: 15px;
+      margin-top: 80px;
+  }
+  @media only screen and (max-width: 480px){
+    div.programa-evento{
         display: none;
     }
-}
-div.menu-movil span{
-    margin-top: 4px;
-    text-align: center;
-    border-radius: 3px;
-    height: 8px;
-    margin-bottom: 6px;
-    background-color: #fff;
-    display: block;
-    -webkit-box-shadow: 3px 3px 3px 0px rgba(7,37,71,1);
-    -moz-box-shadow: 3px 3px 3px 0px rgba(7,37,71,1);
-    box-shadow: 3px 3px 3px 0px rgba(7,37,71,1);
-}
-div.menu-movil:hover span{
-    transition: all .3s ease;
-    background-color: #DE2E19;
-}
-
-/*Talleres*/
-section.programa{
+  }
+  @media only screen and (min-width: 768px){
+      div.programa-evento{
+          width: 50%;
+      }
+  }
+  @media only screen and (min-width: 992px){
+      div.programa-evento{
+          width: 60%;
+      }
+  }
+  nav.menu-programa{
+      width: 100%;
+      border-bottom: 1px solid #DE2E19;
+      padding-bottom: 10px;
+  }
+  @media only screen and (min-width: 768px){
+      nav.menu-programa{
+          display: table;
+      }
+  }
+  nav.menu-programa a{
+      display: block;
+      text-align: center;
+      color: #000;
+      text-decoration: none;
+      font-family: 'Bungee Inline', cursive;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+  }
+  @media only screen and (min-width: 768px){
+      nav.menu-programa a{
+          display: table-cell;
+      }
+  }
+  nav.menu-programa a i{
+      color: #DE2E19;
+      font-size: 1.6em;
+      margin-right: 17px;
+  }
+  /*DETALLE EVENTO*/
+  div.detalle-evento{
+      margin-top: 20px;
+      border-bottom: 1px solid #000;
+  }
+  div.detalle-evento:nth-child(2){
+      border: none;
+  }
+  div.detalle-evento p{
+    margin-bottom: 20px;
+    
+  }
+  /*INVITADOS*/
+  ul.lista-invitados li{
+    padding: 10px;
+    float: left;
+  }
+  @media only screen and (min-width: 480px){
+    ul.lista-invitados li{
+      width: 50%; 
+    }
+  }
+  @media only screen and (min-width: 768px){
+    ul.lista-invitados li{
+      width: 33.3%; 
+    }
+  }
+  div.invitado{
     position: relative;
-}
-div.contenedor-video{
+    overflow: hidden;
+  }
+  div.invitado img{
+    transition: all 0.7s ease-in-out;
     max-width: 100%;
-    overflow-x: hidden;
-}
-div.contenedor-video video{
+    filter: gray;
+    -webkit-filter: grayscale(1);
+  }
+  div.invitado:hover img{
+    transition: all 0.7s ease;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+  }
+  div.invitado p{
+    transition: all 0.7s ease-in-out;
+    padding-left: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    padding: 15pz 10px;
+    margin: 0;
+    background-color: rgba(121, 127, 134, 0.55);
     width: 100%;
-}
-div.contenido-programa{
+    text-align: left;
+    font-family: 'Patua One', cursive;
+    color: #000;
+    text-transform: uppercase;
+  }
+  div.invitado:hover p{
+    bottom: -80px;
+    transition: all 0.7s ease-in-out;
+    background-color: rgba(216,84,22,0.55);
+    color: #0A3464;
+    opacity:0;
+  }
+  /* Contador */
+  .parallax::before{
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-}
-div.programa-evento{
-    transition: all .6s ease;
-    background-color: rgba(255,255,255, .5);
-    padding: 15px;
-    margin-top: 80px;
-}
-div.programa-evento:hover{
-    transition: all .6s ease;
-    background-color: rgba(255,255,255, .8);
-    padding: 15px;
-    margin-top: 80px;
-}
-@media only screen and (max-width: 480px){
-  div.programa-evento{
-      display: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-filter: brightness(.8);
+    filter: brightness(.8);
   }
-}
-@media only screen and (min-width: 768px){
-    div.programa-evento{
-        width: 50%;
-    }
-}
-@media only screen and (min-width: 992px){
-    div.programa-evento{
-        width: 60%;
-    }
-}
-nav.menu-programa{
-    width: 100%;
-    border-bottom: 1px solid #DE2E19;
-    padding-bottom: 10px;
-}
-@media only screen and (min-width: 768px){
-    nav.menu-programa{
-        display: table;
-    }
-}
-nav.menu-programa a{
-    display: block;
+  div.contador{
+    position: relative;
+    height: auto;
+  }
+  div.contador::before{
+    background-image: url(../img/bg-resumen.jpg);
+    content: '';
+  }
+  ul.resumen-evento{
+    position: relative;
+    padding: 120px 0;
+  }
+  ul.resumen-evento li{
+    width: 50%;
+    float: left;
     text-align: center;
-    color: #000;
-    text-decoration: none;
-    font-family: 'Bungee Inline', cursive;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-@media only screen and (min-width: 768px){
-    nav.menu-programa a{
-        display: table-cell;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Patua One', cursive;
+    font-size: 24px;
+  }
+  @media only screen and (min-width: 768px){
+    ul.resumen-evento li{
+        width: 25%;
     }
-}
-nav.menu-programa a i{
-    color: #DE2E19;
-    font-size: 1.6em;
-    margin-right: 17px;
-}
-/*DETALLE EVENTO*/
-div.detalle-evento{
+    p.numero{
+      color: #B32918;
+      font-size: 4em;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }  
+  /*TABLA PRECIOS*/
+  ul.lista-precios > li{
+    padding: 5px;
+    margin-top: 10px;
+  }
+  @media only screen and (min-width: 768px){
+    ul.lista-precios > li{
+      float: left;
+      width: 33.3%;
+    }
+  } 
+  div.tabla-precio{
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  div.tabla.precio:hover{
+    transform: scale(1.1);
+    border: 1px solid #B32918;
+  }
+  div.tabla-precio ul li{
+    font-family: 'Patua One', cursive;    
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 40px;
+  }
+  div.tabla-precio ul li::before{
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 20px;
+    color: #0A3464;
+    -webkit-font-smoothing: antialiased;
+    content: '\2714';
+  }
+  div.tabla-precio h3{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  div.tabla-precio h3.alldays{
+    background-color: #0A3464;
+    color: #fff;
+  }
+  div.tabla-precio p.numero{
+    color: #000;
     margin-top: 20px;
-    border-bottom: 1px solid #000;
-}
-div.detalle-evento:nth-child(2){
-    border: none;
-}
-div.detalle-evento p{
-  margin-bottom: 20px;
-  
-}
-/*INVITADOS*/
-ul.lista-invitados li{
-  padding: 10px;
-  float: left;
-}
-@media only screen and (min-width: 480px){
-  ul.lista-invitados li{
-    width: 50%; 
   }
-}
-@media only screen and (min-width: 768px){
-  ul.lista-invitados li{
-    width: 33.3%; 
-  }
-}
-div.invitado{
-  position: relative;
-  overflow: hidden;
-}
-div.invitado img{
-  transition: all 0.7s ease;
-  max-width: 100%;
-  filter: gray;
-  -webkit-filter: grayscale(1);
-}
-div.invitado:hover img{
-  transition: all 0.7.s ease;
-  -webkit-filter: grayscale(0);
-}
-div.invitado p{
-  transition: all 0.7s ease;
-  padding-left: 5px;
-  position: absolute;
-  bottom: 0;
-  left: 0; 
-  padding: 15pz 10px;
-  margin: 0;
-  background-color: rgba(121, 127, 134, 0.55);
-  width: 100%;
-  text-align: left;
-  font-family: 'Patua One', cursive;
-  color: #000;
-  text-transform: uppercase;
-}
-div.invitado:hover p{
-  transition: all 0.7s ease;
-  background-color: rgba(216,84,22,0.55);
-  color: #0A3464;
-}
 
 
 
